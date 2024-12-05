@@ -8,22 +8,43 @@
 ```ruby
 mkdir express-app
 cd express-app
-
-# The following command will prompt you for information about your project
 npm init
+```
 
-# Install express, typescript and types
-npm install express --save
-npm install typescript ts-node @types/node @types/express --save-dev
+### Install express, typescript and types
+```ruby
+npm install express
+npm install typescript ts-node @types/node @types/express --D
+```
 
-# Generate tsconfig.json
+### Generate tsconfig.json
+
+```ruby
 npx tsc --init
+```
 
-# start, build, serve
-ts-node src
+### Update main file
+
+```ruby
+curl -O https://raw.githubusercontent.com/tseijp/amplify-express-server-test/refs/heads/main/index.ts
+curl -O https://raw.githubusercontent.com/tseijp/amplify-express-server-test/refs/heads/main/deploy-manifest.json
+curl -O https://raw.githubusercontent.com/tseijp/amplify-express-server-test/refs/heads/main/amplify.yml
+```
+
+### Test start, build, serve
+
+```ruby
+# start
+tsx watch index.ts
+# build
 tsc --outDir dist
+# serve
+node dist/index.js
+```
 
-# Push to Github
+### Push to Github
+
+```tsx
 npx gitignore node
 echo ".amplify-hosting" >> .gitignore
 git add .
