@@ -6,6 +6,8 @@ const port = 3000;
 
 app.use(express.text());
 
+app.use(express.static("static"));
+
 app.listen(port, () => {
   console.log(`server is listening on ${port}`);
 });
