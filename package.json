@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "mkdir express-app cd express-app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "ts-node index.ts",
     "build": "tsc --outDir dist",
