@@ -1,6 +1,6 @@
 # amplify-express-server-test
 
-This repo is a test for deploying arbitrary server apps using the AWS Amplify Hosting deployment specification. It is specifically tailored for deploying an Express server as per [AWS Amplify documentation](https://docs.aws.amazon.com/ja_jp/amplify/latest/userguide/deploy-express-server.html), demonstrating step-by-step procedures to ensure successful deployment.
+This repo is a test for deploying arbitrary server apps using the AWS Amplify Hosting deployment specification. It is specifically tailored for deploying an Express server as per [AWS Amplify documentation](https://docs.aws.amazon.com/amplify/latest/userguide/deploy-express-server.html), demonstrating step-by-step procedures to ensure successful deployment.
 
 ### Other
 
